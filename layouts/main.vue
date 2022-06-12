@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <Sidebar/>
-    <Nuxt keepAlive/>
+    <Nuxt keep-alive/>
     <Timeline/>
   </div>
 </template>

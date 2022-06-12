@@ -1,5 +1,7 @@
 <template>
-  <div>Sidebar</div>
+  <div>
+    <img src="@/assets/img/logo.svg" alt="">
+  </div>
 </template>
 
 <script>
