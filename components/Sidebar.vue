@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="@/assets/img/logo.svg" alt="">
+    <button>asdas</button>
   </div>
 </template>
 
