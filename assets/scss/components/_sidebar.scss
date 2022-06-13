@@ -1,2 +1,43 @@
 @use "../abstracts/variables" as *;
 
+.sidebar {
+    width: 25%;
+    height: 100%;
+
+    & .logo {
+        width: 50px;
+        height: 30px;
+    }
+
+    & .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        & :hover{
+            background-color:rgb(231,231,232);
+           
+        }
+
+        & img {
+            width: 26px;
+            height: 26px;
+            margin: 0 20px;
+        }
+    }
+    & a{
+        text-decoration: none;
+        align-items: flex-start;
+        font-size: 20px;
+        font-family: TwitterChirp , -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+        padding: 12px;
+        border-radius: 9999px;
+        margin: 0 50px;
+        color: rgb(15, 20, 25);
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    
+}
