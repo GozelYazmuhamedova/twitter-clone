@@ -1,6 +1,24 @@
 @use 'abstracts/reset';
 @use 'abstracts/variables' as *;
 
-.container{
-  width: 100%;
+body {
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1260px;
+  margin: auto;
+  display: flex;
+}
+
+.tweet-flow {
+  max-width: 50%;
+  background: cyan;
+  margin-left: auto;
+}
+
+.timeline {
+  max-width: 30%;
+  background: crimson;
 }

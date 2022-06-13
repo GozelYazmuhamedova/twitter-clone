@@ -1,13 +1,12 @@
 <template>
-  <div>Timeline</div>
+  <div class="timeline">
+    
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style>
-
+<style lang="scss">
 </style>

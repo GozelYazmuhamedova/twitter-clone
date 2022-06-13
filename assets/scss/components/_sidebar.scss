@@ -1,43 +1,47 @@
-@use "../abstracts/variables" as *;
+@use '../abstracts/variables' as *;
 
 .sidebar {
-    width: 25%;
-    height: 100%;
-
-    & .logo {
-        width: 50px;
-        height: 30px;
+  height: 100%;
+  flex: 0 0 20%;
+  padding: 12px;
+  position: fixed;
+  background-color: $white;
+  & .logo {
+    display: block;
+    width: 52px;
+    height: 52px;
+    padding: 10px;
+    margin-left: 10px;
+    & img {
+      width: 100%;
+      height: 100%;
     }
-
-    & .nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        
-        & :hover{
-            background-color:rgb(231,231,232);
-           
-        }
-
-        & img {
-            width: 26px;
-            height: 26px;
-            margin: 0 20px;
-        }
+    &:hover {
+      background-color: rgba(29, 55, 240, 0.1);
+      border-radius: 100px;
     }
-    & a{
-        text-decoration: none;
-        align-items: flex-start;
-        font-size: 20px;
-        font-family: TwitterChirp , -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
-        padding: 12px;
-        border-radius: 9999px;
-        margin: 0 50px;
-        color: rgb(15, 20, 25);
-        line-height: 24px;
-        font-weight: 400;
-        font-style: normal;
-    }
+  }
 
-    
+  & .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &-link {
+      font-size: 20px;
+      padding: 12px 20px;
+      border-radius: 100px;
+      color: $black;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      grid-gap: 20px;
+      & img {
+        width: 26px;
+        height: 26px;
+      }
+      &:hover {
+        background-color: rgb(231, 231, 232);
+      }
+    }
+  }
 }

@@ -1,11 +1,11 @@
 <template>
-  <div>
-    index
+  <div class="tweet-flow">
+    
   </div>
 </template>
 
 <script>
 export default {
-  layout:'main',
+  layout: 'main',
 }
 </script>
