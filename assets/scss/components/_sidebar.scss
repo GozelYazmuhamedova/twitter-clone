@@ -1,6 +1,8 @@
 @use '../abstracts/variables' as *;
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   flex: 0 0 20%;
   padding: 12px;
@@ -17,7 +19,7 @@
       height: 100%;
     }
     &:hover {
-      background-color: rgba(29, 55, 240, 0.1);
+      background-color: $logohover;
       border-radius: 100px;
     }
   }
@@ -40,8 +42,62 @@
         height: 26px;
       }
       &:hover {
-        background-color: rgb(231, 231, 232);
+        background-color: $gray;
       }
+    }
+
+    & .create-tweet{
+      margin-top: 15px;
+      padding:15px 90px;
+      width: fit-content;
+      font-family: inherit;
+      font-size: 17px;
+      font-weight: 700;
+      color: $white;
+      background-color: $lightblue;
+      border-radius:100px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $darkblue;
+      }
+
+    }
+  }
+
+  .profile-button{
+    display: flex;
+    grid-gap:5px;
+    margin-top: auto;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+    
+    &:hover{
+      background-color: $gray;
+   
+    }
+
+   & b{
+    font-weight: 600;
+    color: $black;
+   }
+
+   & p{
+    color: $darkgray;
+   }
+
+    & .profile-img{
+      height: 50px;
+      width: 50px;
+      margin-right: 10px;
+      border-radius: 50px;
+    }
+
+    & .profile-icon{
+      height: 30px;
+      width: 30px;
+      margin: 10px 0 0 15px;
     }
   }
 }

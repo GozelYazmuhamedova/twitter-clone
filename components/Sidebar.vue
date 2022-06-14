@@ -36,9 +36,12 @@
         <img src="@/assets/img/more.svg" alt="more" />
         More
       </a>
+      <div class="create-tweet">Tweet</div>
     </div>
     <div class="profile-button">
-      Profile Button
+      <img class="profile-img" src="~/assets/img/profile.jpg" alt="">
+      <p><b>Andrew Johnson</b><br>@andrewjhonson</p>
+      <img class="profile-icon" src="~/assets/img/profile-button.svg" alt="">
     </div>
   </div>
 </template>

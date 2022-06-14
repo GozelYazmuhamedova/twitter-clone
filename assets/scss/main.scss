@@ -12,13 +12,96 @@ body {
   display: flex;
 }
 
-.tweet-flow {
-  max-width: 50%;
-  background: cyan;
-  margin-left: auto;
+.timeline {
+  padding-left: 30px;
+  max-width: 30%;
 }
 
-.timeline {
-  max-width: 30%;
-  background: crimson;
+.tweet-flow {
+  max-width: 50%;
+  margin-left: auto;
+  border: 3px solid $lightgray;
+
+  & header {
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    & .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 20px;
+
+      & h2 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      & img {
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
+
+        &:hover {
+          background-color: $gray ;
+        }
+      }
+    }
+  }
+
+  & .happening {
+    display: flex;
+    padding: 10px 20px;
+
+    & img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    & .input {
+      margin: 15px 0 10px 10px;
+      font-size: 20px;
+      color: $darkgray;
+    }
+
+    & .reply {
+      color: $darkblue;
+
+      & img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        color: $darkblue;
+      }
+    }
+  }
+
+  & .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 3px solid $lightgray;
+
+    button {
+      & img {
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+        stroke: $darkblue;
+
+      }
+    }
+
+    & .create-tweet {
+      padding: 10px 20px;
+      background-color: $lightblue1;
+      color: $white;
+      border-radius: 50px;
+    }
+
+  }
+
+
 }
