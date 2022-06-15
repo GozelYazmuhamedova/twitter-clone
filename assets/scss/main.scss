@@ -25,17 +25,19 @@ body {
   & header {
     position: sticky;
     top: 0;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 
     & .header {
       display: flex;
       justify-content: space-between;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7));
       padding: 15px 20px;
 
       & h2 {
         font-size: 20px;
         font-weight: 700;
+        color: $color;
       }
 
       & img {
@@ -51,31 +53,46 @@ body {
   }
 
   & .happening {
+    margin-left: 20px;
     display: flex;
     padding: 10px 20px;
 
     & img {
+      margin-top: 10px;
       width: 50px;
       height: 50px;
       border-radius: 50px;
+      opacity: 0.9;
+
+      &:hover{
+        opacity: 1;
+      }
     }
 
     & .input {
+      position: relative;
       margin: 15px 0 10px 10px;
       font-size: 20px;
-      color: $darkgray;
-    }
+      color: $color;
 
-    & .reply {
-      color: $darkblue;
+      &:active .reply{
+        display: block;
+        position: absolute;
+      }
 
-      & img {
-        margin-right: 10px;
-        width: 20px;
-        height: 20px;
+      & .reply {
         color: $darkblue;
+        font-size: 15px;
+        display: none;
+
+        & img {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+        }
       }
     }
+
   }
 
   & .buttons {
@@ -83,14 +100,25 @@ body {
     justify-content: space-between;
     padding: 15px;
     border-bottom: 3px solid $lightgray;
+    margin-left: 70px;
 
-    button {
+    & button {
+      padding: 10px;
+      border-radius: 50px;
+
+      &.disabled {
+        &:hover {
+          background-color: unset;
+        }
+      }
+
+      &:hover {
+        background-color: $logohover;
+      }
+
       & img {
         width: 25px;
         height: 25px;
-        margin: 10px;
-        stroke: $darkblue;
-
       }
     }
 
@@ -98,10 +126,55 @@ body {
       padding: 10px 20px;
       background-color: $lightblue1;
       color: $white;
+      font-size: 15px;
+      font-weight: 700;
       border-radius: 50px;
     }
 
   }
 
-
+  & .tweet-1{
+    border-bottom: 3px solid $lightgray;
+    margin-left:10px;
+    .profile-button {
+      margin-left: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      cursor: pointer;
+  
+      & b {
+        font-weight: 600;
+        color: $color;
+      }
+  
+      & p {
+        color: $shadeofgray;
+      }
+  
+      & .profile-img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+      }
+  
+      & .profile-icon {
+        height: 30px;
+        width: 30px;
+        margin: 10px 0 0 15px;
+      }
+    }
+  
+    & .tweet-flow-buttons {
+      display: flex;
+      grid-gap:110px;
+      margin: 20px 80px;
+      & button{
+      & img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    }
+  }
 }

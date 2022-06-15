@@ -105,6 +105,16 @@
 
     <div class="show-more">Show more</div>
       </div>
+<div class="footer">
+  <a href="#">Terms of Service</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Cookie Policy</a>
+  <a href="#">Imprint</a>
+  <a href="#">Accessibility</a>
+  <a href="#">Ads info</a>
+  <a href="#">More</a>
+  <p>© 2022 Twitter, Inc.</p>
+</div>
   </div>
 </template>
 

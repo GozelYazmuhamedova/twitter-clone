@@ -16,7 +16,6 @@
       background-color: $lightgray;
       border-radius: 50px;
 
-
       & img {
         margin-left: 10px;
         width: 20px;
@@ -34,16 +33,17 @@
 
     & h2 {
       font-weight: 700;
-      font-size: 25px;
+      font-size: 20px;
       padding: 15px 16px;
     }
 
     & .show-more {
-      color: $darkblue;
-      font-size: 16px;
+      color: $shadeofblue;
+      font-size: 15px;
       cursor: pointer;
       padding: 12px 16px;
-      font-weight: 600;
+      font-weight: 400;
+      
 
       &:hover {
         background-color: $gray;
@@ -64,13 +64,14 @@
         padding: 12px 16px;
 
         & p {
-          color: $darkgray;
+          color: $shadeofgray;
+          font-size: $fs-13;
         }
 
         & h3 {
           color: $black;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 15px;
+          font-weight: 700;
         }
       }
 
@@ -97,13 +98,13 @@
 
     & h2 {
       font-weight: 700;
-      font-size: 25px;
+      font-size: 20px;
       padding: 15px 16px;
     }
 
     & .show-more {
-      color: $darkblue;
-      font-size: 16px;
+      color: $shadeofblue;
+      font-size: 15px;
       cursor: pointer;
       padding: 12px 16px;
       font-weight: 600;
@@ -126,7 +127,7 @@
 
       & b {
         font-weight: 600;
-        color: $black;
+        color: $color;
 
         &:hover{
           text-decoration: underline;
@@ -151,8 +152,24 @@
         color: $white;
         border-radius: 30px;
       }
+    }
+  }
 
+  & .footer{
+    padding: 12px;
 
+    & a,p{
+      margin: 5px;
+      font-family: $font-f;
+      font-size: $fs-13;
+      color: $shadeofgray;
+
+      &:hover{
+      text-decoration: underline;
+      }
+    }
+    & p:hover{
+      text-decoration: unset;
     }
   }
 }
